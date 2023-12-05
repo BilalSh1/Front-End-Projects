@@ -18,6 +18,10 @@ addButtonElem.addEventListener("click", () => {
     const task = textBoxElem.value
     textBoxElem.value = '';
     if (!task) return;
+    if (localStorage.length == 10) {
+        alert("You have to many tasks! do other tasks before adding more.");
+        return;
+    }
     localStorage.setItem(task, "false");
     addTaskToPage(task);
 });
@@ -35,6 +39,9 @@ function addTaskToPage(task) {
         if (tempElem.classList.contains("checked")) {
             localStorage.setItem(task, "true");
         } 
+        else {
+            localStorage.setItem(task, "false");
+        }
     });
     
     unorderListElem.append(tempElem);
