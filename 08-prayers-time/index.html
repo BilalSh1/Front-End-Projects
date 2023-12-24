@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayers Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <span id="date"></span>
+        <div class="cities-container">
+            <div class="city" data-name="Makkah" data-country="SA">مكة المكرمة</div>
+            <div class="city" data-name="Al Madinah al Munawwarah" data-country="SA">المدينة</div>
+            <div class="city" data-name="El Quds" data-country="IL">القدس</div>
+            <div class="city selected-city" data-name="Cairo" data-country="EG">القاهرة</div>
+            <div class="city" data-name="Amman" data-country="JO">عمان</div>
+            <div class="city" data-name="Baghdad" data-country="IQ">بغداد</div>
+        </div>
+        <div class="prayers-time-container">
+            <div class="prayer-time">العشاء<span id="isha">08:52</span></div>
+            <div class="prayer-time">المغرب<span id="maghrib">08:52</span></div>
+            <div class="prayer-time">العصر<span id="asr">08:52</span></div>
+            <div class="prayer-time">الظهر<span id="dhuhr">08:52</span></div>
+            <div class="prayer-time">الفجر<span id="fajr">08:52</span></div>
+            <div class="prayer-time">الشروق<span id="sunrise">08:52</span></div>
+        </div>
+    </div>
+</body>
+</html>

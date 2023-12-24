@@ -1,0 +1,92 @@
+* {
+    font-family: 'Kufam', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+}
+
+#date {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #2b2d42;
+    word-spacing: 10px;
+    
+}
+
+.cities-container {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+}
+
+.city {
+    background-color: #2b2d42;
+    color: #edf2f4 ;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.selected-city {
+    background-color: #edf2f4;
+    color: #2b2d42;
+    border: none;
+    box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2);;
+}
+
+.prayers-time-container {
+    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    background-color: #edf2f4;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.prayer-time {
+    height: 150px;
+    width: 200px;
+    color: #2b2d42;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.prayer-time span {
+    display: block;
+    padding-top: 20px;
+    font-size: 36px;
+    font-weight: 500;
+    color: rgba(219, 62, 31, 0.834);
+    animation: wing 1s infinite; 
+}
+
+@keyframes wing{
+    0% {
+        text-decoration: underline;
+    }
+
+    50% {
+        text-decoration: none;
+    }
+
+    100% {
+        text-decoration: underline;
+    }
+}
